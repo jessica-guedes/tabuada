@@ -1,6 +1,7 @@
 function tabuada(){
   let saida = document.getElementById('saida')
   let n = Number(document.getElementById('fnum').value)
+  let campo = document.getElementById('fnum')
 
   saida.innerHTML = `<h2> Tabuada de ${n}</h2><br>`
   let c = 1
@@ -9,4 +10,6 @@ function tabuada(){
     c ++ 
     }
     saida.style.textAlign = "center"
+    campo.value = '';
+    campo.focus()
 }
